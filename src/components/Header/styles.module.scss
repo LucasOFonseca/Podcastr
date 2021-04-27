@@ -1,0 +1,169 @@
+.headerContainer {
+    background: var(--white);
+    height: 6.5rem;
+
+    display: flex;
+    align-items: center;
+
+    padding: 2rem 4rem;
+
+    border-bottom: 1px solid var(--gray-100);
+
+    img {
+        width: 10.2rem;
+    }
+
+    p {
+        margin-left: 2rem;
+        padding: 0.25rem 0 0.25rem 2rem;
+        border-left: 1px solid var(--gray-100);
+    }
+
+    span {
+        margin: 0 auto;
+        text-transform: capitalize;
+    }
+
+    button {
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+
+        border-radius: 1rem;
+
+        border: none;
+        padding: 0.25rem;
+
+        background: var(--gray-100);
+
+        transition: filter 0.2s;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            filter: opacity(0.6);
+        }
+
+        &:hover {
+            filter: brightness(0.95);
+        }
+    }
+}
+
+.dark {
+    background: var(--gray-900);
+    height: 6.5rem;
+
+    display: flex;
+    align-items: center;
+
+    padding: 2rem 4rem;
+
+    border-bottom: 1px solid var(--gray-800);
+
+    img {
+        width: 10.2rem;
+    }
+
+    p {
+        margin-left: 2rem;
+        padding: 0.25rem 0 0.25rem 2rem;
+        border-left: 1px solid var(--gray-200);
+
+        color: var(--gray-200);
+    }
+
+    span {
+        margin: 0 auto;
+        text-transform: capitalize;
+
+        color: var(--gray-200);
+    }
+
+    button {
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+
+        border-radius: 1rem;
+
+        border: none;
+        padding: 0.25rem;
+
+        background: var(--gray-850);
+
+        transition: filter 0.2s;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            filter: opacity(0.6);
+        }
+
+        &:hover {
+            filter: brightness(1.05);
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .headerContainer {
+        padding: 1.5rem 1rem;
+    }
+
+    .dark {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .headerContainer {
+        p {
+            margin-left: 1rem;
+            padding-left:  1rem;
+        }
+    }
+
+    .dark {
+        p {
+            margin-left: 1rem;
+            padding-left:  1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headerContainer {
+        p {
+            width: 15rem;
+        }
+    }
+
+    .dark {
+        p {
+            width: 15rem;
+        }
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .headerContainer {
+        p {
+            display: none;
+        }
+    }
+
+    .dark {
+        p {
+            display: none;
+        }
+    }
+}
